@@ -1,6 +1,6 @@
 package desafioum.formageometrica;
 
-public class Triangulo implements FormaGeometrica {
+public class Triangulo extends FormaGeometrica {
 
     private final String NOME_FORMA = "Triângulo";
     private int base;
@@ -9,6 +9,7 @@ public class Triangulo implements FormaGeometrica {
     public Triangulo(int base, int altura) {
         this.base = base;
         this.altura = altura;
+        setCor("VERMELHO");
     }
 
     public void setBase(int base) {

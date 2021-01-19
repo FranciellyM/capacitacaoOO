@@ -1,12 +1,13 @@
 package desafioum.formageometrica;
 
-public class Circulo implements FormaGeometrica {
+public class Circulo extends FormaGeometrica {
     
     private final String NOME_FORMA = "Círculo";
     private int raio;
 
     public Circulo(int raio) {
         this.raio = raio;
+        setCor("AZUL");
     }
 
     public void setRaio(int raio) {

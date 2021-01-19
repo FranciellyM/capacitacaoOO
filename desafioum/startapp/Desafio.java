@@ -19,7 +19,8 @@ public class Desafio {
 
         FormaGeometrica formaGeometrica = criarFormaGeometrica(formaEscolhida);
         if(formaGeometrica != null) {
-            System.out.printf("%s com área de %.1f\n", formaGeometrica.getNomeDaForma(), formaGeometrica.calculaArea());
+            System.out.printf("%s com área de %.1f e cor: %s\n", formaGeometrica.getNomeDaForma(), formaGeometrica.calculaArea(),
+                    formaGeometrica.getCor());
         } else {
             System.out.println("Ocorreu um erro.");
         }

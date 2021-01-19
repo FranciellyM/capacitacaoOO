@@ -1,8 +1,15 @@
 package desafioum.formageometrica;
 
-public interface FormaGeometrica {
+public abstract class FormaGeometrica implements IForma {
 
-    public String getNomeDaForma();
-    public double calculaArea();
+    private String cor;
+
+    protected void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public String getCor() {
+        return this.cor;
+    }
     
 }

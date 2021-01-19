@@ -1,12 +1,13 @@
 package desafioum.formageometrica;
 
-public class Quadrado implements FormaGeometrica {
+public class Quadrado extends FormaGeometrica {
 
     private final String NOME_FORMA = "Quadrado";
     private int lado;
 
     public Quadrado(int lado) {
         this.lado = lado;
+        setCor("AMARELO");
     }
 
     public void setLado(int lado) {
